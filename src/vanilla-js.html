@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="advic3"></h1>
+    <button class="btn"> Get Advice</button>
+    <p> you have read <strong class="count"></strong> pieces of advices</p>
+    <script>
+        //Manually selecting DOM element(which require a class or )
+        const adviceEl=document.querySelector(".advice");
+        const btnEl=document.querySelector(".btn");
+        const countl=document.querySelector(".count");
+        const getAdvice=async function() {
+            const res= fetch('https://api.adviceslip.com/advice');
+            const data = await res.json();
+            advice=data.slip.advice;
+            count=count+1;
+
+            // Manually updating the DOM elements
+            countEl.textContent=count;
+            adviceEl.textContent=advice;
+
+        };
+        // setting the initial values
+        let count=0;
+        let advice="";
+        getAdvice();
+        // attaching the event listner
+        btnEl.addEventListener("click",getAdvice);
+        // reacting is good at keeping the data and dispaly the data in ui automatically
+
+        
+
+
+    </script>
+</body>
+</html> -->
